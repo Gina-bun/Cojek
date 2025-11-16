@@ -1,0 +1,16 @@
+.chatbot-container{
+    
+    border-radius: 16px;
+    height: 400px;
+    max-height: 400px;
+    padding-bottom: 1rem;
+
+}
+
+.chat-messages-container{
+    border-radius: 16px;
+    overflow: scroll;
+    scrollbar-width: none;
+    
+    flex-grow: 1;
+}
