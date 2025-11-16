@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar";
 
 export function LandingPage() {
   return (
-    <div>
+    <div className="">
       <Navbar />
 
       {/* Hero section */}
@@ -28,7 +28,7 @@ export function LandingPage() {
         </h1>
         <Link to="/project-gen">
           <button className="border-2 text-xl rounded-[14px] py-1 mt-9 px-4  border-(--button-stroke-color)">
-            Get Started
+            Get Started Here &#8594;
           </button>
         </Link>
       </div>
@@ -38,7 +38,7 @@ export function LandingPage() {
         <div className="grid grid-cols-3">
           <div className="col-span-3 ml-[2em] flex flex-col justify-center place-items-center">
             <img
-              className="size-35 m-auto  h-28"
+              className="size-45 m-auto  h-22"
               src="/images/logo2.png"
               alt="Cojek logo"
             />

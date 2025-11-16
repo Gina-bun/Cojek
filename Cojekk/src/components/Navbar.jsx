@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Navbar() {
   return (
     <div>
-      <nav className="flex mt-4 mx-5  bg-(--navbar-background) text-(--text-navbar) h-auto rounded-[20px]  px-10 items-center">
+      <nav className="flex mt-4 mx-5  bg-(--navbar-background) text-(--text-navbar) h-auto rounded-[20px]  px-10 py-2 items-center">
         <ul className="flex gap-4">
           <Link className="py-1" to="/">
             Home
@@ -17,12 +17,12 @@ export function Navbar() {
           <Link className="bg-(--login-button) rounded-[25px] px-4 py-1" to="/login">
             Login
           </Link>
-          <Link className="bg-(--login-button) rounded-[25px] px-4 py-1" to="/dashboard">
-            Dashboar
+          <Link className="bg-(--login-button) rounded-[25px] px-4 py-1" to="/project-gen">
+            Project generator
           </Link>
         </ul>
         <img
-          className="ml-auto size-17"
+          className="ml-auto size-30 h-14"
           src="/images/logo2.png"
           alt="Cojek logo"
         />
