@@ -1,3 +1,4 @@
+import ReactMarkdown from "react-markdown"
 import "./ChatMessage.css";
 
 export function ChatMessage({ message, sender }) {
@@ -13,7 +14,10 @@ export function ChatMessage({ message, sender }) {
             alt="chatbot-pfp"
           />
         )}
-        <p className="message-bubble">{message}</p>
+        <div className="message-bubble">
+<ReactMarkdown  >{message}</ReactMarkdown>
+        </div>
+        
         {sender === "user" && (
           <img
             className="user-pfp size-10"

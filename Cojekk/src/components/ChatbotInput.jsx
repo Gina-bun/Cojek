@@ -7,7 +7,7 @@ export function ChatbotInput({ messages, setMessages }) {
 
   const client = new OpenAI({
     apiKey:
-      "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",
+      "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",
     dangerouslyAllowBrowser: true,
   });
 
