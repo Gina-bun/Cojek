@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Rubik-bubbles';
+    src: url(./assets/fonts/RubikBubbles-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-black';
+    src: url(./assets/fonts/Raleway-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url(./assets/fonts/Raleway-Regular.ttf) format('truetype');
+}
+
+:root{
+    --font-rubik-bubbles: 'Rubik-bubbles', cursive;
+    --font-raleway-regular: 'Raleway-regular', sans-serif;
+    --font-raleway-black: 'Raleway-black', sans-serif;
+    --navbar-radius: 40px;
+    --landing-page-background: #f0e7e6;
+    --navbar-background: #322021;
+    --footer-background: #322021;
+    --footer-input: #322021;
+    --text-navbar: #EFE8E5;
+    --text-footer: #EFE8E5;
+    --login-button: #654142;
+    --card-dark: #A2696A;
+    --card-light: #BF9A9B;
+    /* for get started button */
+    --button-stroke-color: #A2696A;
+    --button-stroke-weight: 3px;
+    --mug-opacity:0.1;
+
+}
+
+body{
+    font-family: var( --font-raleway-regular);
+    background-color: var(--landing-page-background);
+}
+
+@layer components{
+    .card{
+        @apply  rounded-md text-center text-white px-4 py-9
+    }
+    .card h3{
+        @apply font-bold 
+    }
+
+}
+
+@layer utilities{
+    .stroke-text{
+        -webkit-text-stroke-width: var(--button-stroke-weight);
+        -webkit-text-stroke-color: var(--button-stroke-color);
+    }
+    
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Black.ttf') format('truetype');
+  font-weight: 700;
+}
+
