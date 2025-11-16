@@ -6,8 +6,7 @@ export function ChatbotInput({ messages, setMessages }) {
   const [isLoading, setIsLOading] = useState(true);
 
   const client = new OpenAI({
-    apiKey:
-      "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",
+    apiKey: "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",
     dangerouslyAllowBrowser: true,
   });
 
