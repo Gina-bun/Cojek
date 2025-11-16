@@ -19,25 +19,7 @@ export function LandingPage() {
         />
       </div>
 
-      {/* cards section */}
-      <div className="cards grid grid-cols-4 gap-2 px-6">
-        <div className="card bg-(--card-dark)">
-          <h3>Topic Based Ideas</h3>
-          <p>Type any concept and get project ideas instantly</p>
-        </div>
-        <div className="card bg-(--card-light)">
-          <h3>Difficulty Levels</h3>
-          <p>Projects come with beginner, intermediate, and advanced labels </p>
-        </div>
-        <div className="card bg-(--card-dark)">
-          <h3>Quick Quizzes</h3>
-          <p>Optional mini quizzes to test your understanding</p>
-        </div>
-        <div className="card bg-(--card-light)">
-          <h3>Progess Tracking</h3>
-          <p>Earn streaks, badges, and points as you complete projects.</p>
-        </div>
-      </div>
+
 
       {/* Get started section */}
       <div className="getStarted my-25 text-center">
